@@ -1,0 +1,16 @@
+1_ASMADHUKUMAR_""_Machine Learning-based Interference Mitigation in a Multi-tier Networks_1_ASMADHUKUMAR
+2_ASMADHUKUMAR_""_Deep Learning-Driven Edge Caching for 5G-and-Beyond Industrial IoT Networks_1_ASMADHUKUMAR
+3_ASSOURIN_""_Sonification of geometry 1_1_ASSOURIN
+4_ARVINDE_""_Edge/Cloud Resource Management for Time-Sensitive Applications (2)_1_ARVINDE
+5_BOAN_""_Deep Reinforcement Learning for Complex Environment_1_BOAN
+6_BOAN_""_Build Software Agents for Power Trading Agent Competition_1_BOAN
+7_BOAN_""_Designing Negotiation Agents to Parcitipate in International Competition_1_BOAN
+8_ASWTCAI_""_Creation of Meta-model for Agent-based Simulation Using Machine Learning Approach_1_ASWTCAI
+9_CCLOY_""_Encoding Images to Text Prompts with CLIP_1_CCLOY
+10_ASLTCHIA_""_Smart Monitor for Studio Photographer_1_Chia Liang Tien_ASLTCHIA
+11_GAOCONG_""_Developing a demonstration system for spatial data exploration and visualization_1_GAOCONG
+12_GAOCONG_""_Deep Learning Supported Location-aware Keyword Query_1_GAOCONG
+13_ASDOUGLAS_""_An AI based Li-ion fast battery charger for power tools_1_ASDOUGLAS
+14_ASDOUGLAS_""_A Li-ion fast battery charger_1_ASDOUGLAS
+15_DNIYATO_""_Metaverse for virtual education 1_1_DNIYATO
+16_YPKE_""_Graph-based Deep Models for Image Semantic Segmentation_1_YPKE
