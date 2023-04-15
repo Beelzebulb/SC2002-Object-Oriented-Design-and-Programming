@@ -182,6 +182,10 @@ public class RequestController extends BaseController {
             return true;
         } else {
             request.setStatus("rejected");
+            if (Objects.equals(request.getType(), "register")) {
+                this.centralManager.getProjectController().getProjectByID(request.getProjectID()).setProjectStatus(1);
+            }
+
             return false;
         }
     }
