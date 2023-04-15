@@ -32,7 +32,7 @@ public class SupervisorBoundary extends UserBoundary {
                         2.  Create Project
                         3.  View Submitted Projects
                         4.  Modify project title
-                        5.  Process request
+                        5.  Process request (Modify Project Title)
                         6.  Request project transfer
                         7.  View incoming requests status and history
                         8.  View outgoing requests status and history

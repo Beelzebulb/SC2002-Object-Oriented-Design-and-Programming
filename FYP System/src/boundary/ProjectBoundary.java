@@ -56,7 +56,7 @@ public class ProjectBoundary extends BaseBoundary {
         if (success) {
             System.out.println("Project Title changed successfully.");
         } else {
-            System.out.println("Unable to change title as user not the creater of project.");
+            System.out.println("Unable to change title as user not the creator of project.");
         }
     }
 

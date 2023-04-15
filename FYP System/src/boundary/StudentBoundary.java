@@ -100,10 +100,10 @@ public class StudentBoundary extends UserBoundary{
         } else {
             if (!this.getStudentController().getRegistered()) {
                 if (this.getStudentController().getCurrentStudent().canRegister()) {
-                    String projectID = this.getLine("Please enter the projectID you would like to be allocated to:");
+                    String projectID = this.getLine("Please enter the projectID you would like to be allocated to: ");
                     while (!this.getProjectController().validateAvailProjectID(Integer.parseInt(projectID))) {
                         System.out.print("Invalid project id. ");
-                        projectID = this.getLine("Please enter the projectID you would like to be allocated to:");
+                        projectID = this.getLine("Please enter the projectID you would like to be allocated to: ");
                     }
                     this.getStudentController().requestAllocation(Integer.valueOf(projectID), this.getStudentController().getCurrentStudent().getId());
                     System.out.println("Your request has been submitted");

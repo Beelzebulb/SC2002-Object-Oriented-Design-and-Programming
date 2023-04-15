@@ -218,7 +218,7 @@ public class CoordinatorBoundary extends SupervisorBoundary{
                         11.Process Project De-registration request
                         12.View all projects
                         13.View projects by filter
-                        14.Process all pending requests
+                        14.Process all pending requests (De-registration and transfer supervisors)
                         15.View all requests
                         16.Log out
                         ========================================================================

@@ -173,7 +173,6 @@ public class RequestController extends BaseController {
                 this.getProjectController().changeTitle(request.getProjectID(), request.getUpdatedValue());
             } else if (Objects.equals(request.getType(), "deRegister")) {
                 boolean capReached = this.getProjectController().unassignProject(request.getProjectID(), request.getRequesteeID());
-                System.out.println("userProjID:" + this.getStudentController().getStudentByID(request.getRequesteeID()).getRegisteredProject());
             } else if (Objects.equals(request.getType(), "changeSupervisor")) {
                 boolean capReached = this.getProjectController().changeSupervisor(request.getProjectID(), request.getUpdatedValue()); // checking if new supervisor's cap reached
                 if (capReached) {

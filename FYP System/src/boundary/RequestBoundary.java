@@ -52,10 +52,10 @@ public class RequestBoundary extends BaseBoundary {
      * @return boolean true if user chooses to exit request processing, false otherwise
      */
     public boolean processRequest(Request request) {
-        String decision = this.getLine("Approve request? Please enter 'Y' to approve request and 'N' to reject request, or 'B' to exit request processing.");
+        String decision = this.getLine("Approve request? Please enter 'Y' to approve request and 'N' to reject request, or 'B' to exit request processing. ");
         while (!(Objects.equals(decision, "Y") || Objects.equals(decision, "N") || Objects.equals(decision, "B"))) {
-            System.out.println("Please enter only 'Y' or 'N'. To exit request processing, please enter 'B'.");
-            decision = this.getLine("Approve request? Please enter 'Y' to approve request and 'N' to reject request.");
+            System.out.println("Please enter only 'Y' or 'N'. To exit request processing, please enter 'B'. ");
+            decision = this.getLine("Approve request? Please enter 'Y' to approve request and 'N' to reject request. ");
         }
         if (decision.equals("B")) {
             return true;
@@ -77,9 +77,10 @@ public class RequestBoundary extends BaseBoundary {
      */
     public void requestTransfer(String supervisorID) {
         this.getProjectBoundary().viewProjectsBySupervisorID(supervisorID, "all");
-        String projectID = this.getLine("Please enter projectID of project to request transfer for:");
+        String projectID = this.getLine("Please enter projectID of project to request transfer for: ");
         String newSupervisorID = this.getCentralManager().getSupervisorBoundary().chooseSupervisor();
         this.getRequestController().requestTransfer(projectID, supervisorID, newSupervisorID);
+        System.out.println("Your Request has been submitted.");
     }
 
     /**
@@ -132,10 +133,10 @@ public class RequestBoundary extends BaseBoundary {
                 return;
             }
             this.displayRequestsWithCounter(requests);
-            int requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ")"));
+            int requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
             while (!(requestIDX >= 1 && requestIDX < requests.size() + 1)) {
                 System.out.print("Invalid request number. ");
-                requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ")"));
+                requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
             }
             boolean exit = this.processRequest(requests.get(requestIDX - 1));
             if (exit) {
@@ -169,10 +170,10 @@ public class RequestBoundary extends BaseBoundary {
                 return;
             }
             this.displayRequestsWithCounter(requests);
-            int requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ")"));
+            int requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
             while (!(requestIDX >= 1 && requestIDX < requests.size() + 1)) {
                 System.out.print("Invalid request number. ");
-                requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ")"));
+                requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
             }
             boolean exit = this.processRequest(requests.get(requestIDX - 1));
             if (exit) {
