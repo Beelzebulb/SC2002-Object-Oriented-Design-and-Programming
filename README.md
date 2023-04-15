@@ -11,4 +11,4 @@ This is our project on Object Oriented Design and Programming. This project feat
 Download and unzip the folder. For first time users, copy the three text files, <b>Projects.txt</b>, <b>Requests.txt</b> and <b>Users.txt</b> in the "Data Files and Instructions" folder and replace the text files in the "data" folder of "FYP System".
 
 ## Running the Program
-
+Go to FYP System > src > fyp. Then, run <b>main</b> to start the program.
