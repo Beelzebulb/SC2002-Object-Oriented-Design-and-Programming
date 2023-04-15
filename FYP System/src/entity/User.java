@@ -17,7 +17,7 @@ public class User {
      * password - password used to login
      * type - (Student, Supervisor, or Coordinator)
      */
-    String name, id, email, password, type;
+    private String name, id, email, password, type;
 
     /**
      * Constructs a new User object with the specified name, id, email, password, and user type.
