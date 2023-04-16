@@ -7,7 +7,7 @@
 7_BOAN_""_Designing Negotiation Agents to Parcitipate in International Competition_1_BOAN
 8_ASWTCAI_""_Creation of Meta-model for Agent-based Simulation Using Machine Learning Approach_1_ASWTCAI
 9_CCLOY_""_Encoding Images to Text Prompts with CLIP_1_CCLOY
-10_ASLTCHIA_""_Smart Monitor for Studio Photographer_1_Chia Liang Tien
+10_ASLTCHIA_""_Smart Monitor for Studio Photographer_1_Chia Liang Tien_ASLTCHIA
 11_GAOCONG_""_Developing a demonstration system for spatial data exploration and visualization_1_GAOCONG
 12_GAOCONG_""_Deep Learning Supported Location-aware Keyword Query_1_GAOCONG
 13_ASDOUGLAS_""_An AI based Li-ion fast battery charger for power tools_1_ASDOUGLAS
