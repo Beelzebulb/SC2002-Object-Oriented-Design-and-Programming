@@ -26,4 +26,4 @@ This is our project on Object Oriented Design and Programming. This project feat
 
 2) Running FYP System.jar file in command prompt. (Windows/MacOS)
 - Open Command Prompt
-- Type in, "java -jar (file path to FYP System.jar)"
+- Type in, "java -jar (file path to FYP System.jar)". For the file path to FYP System.jar, you can drag the FYP System.jar file to the command prompt/terminal.
