@@ -133,17 +133,28 @@ public class RequestBoundary extends BaseBoundary {
                 return;
             }
             this.displayRequestsWithCounter(requests);
-            int requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
-            while (!(requestIDX >= 1 && requestIDX < requests.size() + 1)) {
-                System.out.print("Invalid request number. ");
-                requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
-            }
+            boolean valid = true;
+            int requestIDX = 0;
+            while(valid){
+                try{
+                    requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
+                    while (!(requestIDX >= 1 && requestIDX < requests.size() + 1)) {
+                        System.out.print("Invalid request number. ");
+                        requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
+                    }
+                    valid = false;
+                }
+                catch (Exception e){
+                    }
+                }
             boolean exit = this.processRequest(requests.get(requestIDX - 1));
             if (exit) {
                 return;
             }
+
+            }
         }
-    }
+
 
     /**
      * Displays all requests in the system.
@@ -170,15 +181,25 @@ public class RequestBoundary extends BaseBoundary {
                 return;
             }
             this.displayRequestsWithCounter(requests);
-            int requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
-            while (!(requestIDX >= 1 && requestIDX < requests.size() + 1)) {
-                System.out.print("Invalid request number. ");
-                requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
+            boolean valid = true;
+            int requestIDX = 0;
+            while(valid){
+                try{
+                    requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
+                    while (!(requestIDX >= 1 && requestIDX < requests.size() + 1)) {
+                        System.out.print("Invalid request number. ");
+                        requestIDX = Integer.parseInt(this.getLine("Please enter request number to process (Enter only numbers 1 to " + (requests.size()) + ") "));
+                    }
+                    valid = false;
+                }
+                catch (Exception e){
+                }
             }
             boolean exit = this.processRequest(requests.get(requestIDX - 1));
             if (exit) {
                 return;
             }
+
         }
     }
 }
